@@ -8,11 +8,20 @@ class App extends Component {
     username: 'InnaMon'
   }
 
+  manipulateState = (event) => {
+    this.setState({
+      username: event.target.value
+    })
+    console.log(this.state.username);
+  }
+
   render () {
     return (
       <div className="App">
-      <UserInput />
-      <UserOutput userName={this.state.username}/>
+      <UserInput 
+      type={this.manipulateState}
+      userName={this.state.username}/>
+      <UserOutput/>
       <UserOutput />
       </div>
     );
