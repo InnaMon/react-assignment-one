@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
     <UserInput />
-    <UserOutput />
+    <UserOutput userName={'InnaMon'}/>
     <UserOutput />
     </div>
   );
