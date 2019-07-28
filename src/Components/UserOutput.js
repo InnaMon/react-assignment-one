@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './UserOutput.css';
 
-const UserOutput = () => {
+const UserOutput = (props) => {
     const style = {
         color: 'hotpink'
       }
@@ -9,7 +9,7 @@ const UserOutput = () => {
     return (
         <div>
             <p style={style}>Hello! I am so excited about this first React.js assignment!</p>
-            <p>It may be work but it WILL be worth it!!</p>
+            <p>Username: {props.userName}</p>
         </div>
     )
 }

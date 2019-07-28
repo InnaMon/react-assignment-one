@@ -12,7 +12,6 @@ class App extends Component {
     this.setState({
       username: event.target.value
     })
-    console.log(this.state.username);
   }
 
   render () {
@@ -21,8 +20,8 @@ class App extends Component {
       <UserInput 
       type={this.manipulateState}
       userName={this.state.username}/>
-      <UserOutput/>
-      <UserOutput />
+      <UserOutput  userName={this.state.username}/>
+      <UserOutput userName={this.state.username}/>
       </div>
     );
   }
